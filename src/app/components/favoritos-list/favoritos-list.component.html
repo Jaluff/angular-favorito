@@ -1,6 +1,20 @@
-
-<h1 >
-  {{ texto }}
-</h1>
-
-
+<ul class="list-group">
+	<div class="row">
+		<div *ngFor="let favorito of ofavoritos" class="col-md-4">
+			<li class="list-group">
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">{{ favorito.title }}</h4>
+						<p class="card-text"> {{favorito.url}}</p>
+						<div class="" role="group" aria-label="Basic example">
+							<a routerLink="{{favorito.url}}" class="btn btn-primary btn-sm btn-space " role="button" target="_blank">Ir al marcador</a>
+							<a [routerLink]="['/marcador', favorito._id]" class="btn btn-secondary btn-sm  btn-space " role="button" >Ver</a>
+							<a routerLink="{{favorito.url}}" class="btn btn-warning btn-sm btn-space" role="button " target="_blank">Editar</a>
+							<a routerLink="{{favorito.url}}" class="btn btn-danger btn-sm btn-space" role="button" target="_blank">Eliminar</a>
+						</div>
+					</div>
+				</div>
+			</li>
+		</div>
+	</div>
+</ul>

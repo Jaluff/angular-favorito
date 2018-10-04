@@ -7,10 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   titulo: string;
+  descripcion: string;
   constructor() {
 
     this.titulo = 'Angular-Favoritos';
-
+    this.descripcion = 'Proyecto de angular';
   }
 
 }

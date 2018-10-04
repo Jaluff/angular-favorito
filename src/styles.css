@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; background: #fff; }
+ 
+.clearfix{
+    float: none;
+    clear: both;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container{
+    background: #fff;
+    
+}
+
+.card{
+    margin: 20px,
+}
+
+.btn-space {
+    margin-right: 5px;
+}
+
+header{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+    background: #f50;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid #f50;
+}
+header h1 {
+    margin:0px;
+    color: white;
+    float: left;
+}
+
+header .title-subtitle{
+    float: left;
+    color: white;
+    margin-top: 16px;
+}
+
+header h3{
+    color: #eee;
+}
+
+header #logo{
+    width: 80px;
+    display: block;
+    float: left;
+    margin-top: 0px;
+}
+
+footer{
+    width:250px;
+    margin: 0px auto;
+    margin-top: 20px;
+    color: grey;
+}
+
+
+
+
+
