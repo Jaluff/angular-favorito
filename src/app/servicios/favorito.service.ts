@@ -15,4 +15,8 @@ export class FavoritosService {
     getfavoritos() {
         return this._http.get(this.url + 'favoritos').pipe(map(res => res.json()));
     }
+
+    getfavorito (id: string) {
+        return this._http.get(this.url + 'favorito/' + id).pipe(map(res => res.json()));
+    }
 }
